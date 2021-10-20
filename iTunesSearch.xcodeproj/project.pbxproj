@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B893E05E2720535A00750969 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B893E05D2720535A00750969 /* SearchResultCell.swift */; };
+		B893E06027205F7900750969 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B893E05F27205F7900750969 /* NothingFoundCell.xib */; };
 		B8B2F4A8272018240095C023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B2F4A7272018240095C023 /* AppDelegate.swift */; };
 		B8B2F4AA272018240095C023 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B2F4A9272018240095C023 /* SceneDelegate.swift */; };
 		B8B2F4AC272018240095C023 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B2F4AB272018240095C023 /* SearchViewController.swift */; };
@@ -14,9 +16,12 @@
 		B8B2F4B1272018270095C023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B2F4B0272018270095C023 /* Assets.xcassets */; };
 		B8B2F4B4272018270095C023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8B2F4B2272018270095C023 /* LaunchScreen.storyboard */; };
 		B8B2F4BC272026690095C023 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B2F4BB272026690095C023 /* SearchResult.swift */; };
+		B8B2F4BE27202F700095C023 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B2F4BD27202F700095C023 /* SearchResultCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B893E05D2720535A00750969 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		B893E05F27205F7900750969 /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		B8B2F4A4272018240095C023 /* iTunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B2F4A7272018240095C023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8B2F4A9272018240095C023 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		B8B2F4B3272018270095C023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8B2F4B5272018270095C023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B2F4BB272026690095C023 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		B8B2F4BD27202F700095C023 /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				B8B2F4A9272018240095C023 /* SceneDelegate.swift */,
 				B8B2F4AB272018240095C023 /* SearchViewController.swift */,
 				B8B2F4AD272018240095C023 /* Main.storyboard */,
+				B893E05D2720535A00750969 /* SearchResultCell.swift */,
+				B8B2F4BD27202F700095C023 /* SearchResultCell.xib */,
+				B893E05F27205F7900750969 /* NothingFoundCell.xib */,
 				B8B2F4B0272018270095C023 /* Assets.xcassets */,
 				B8B2F4B2272018270095C023 /* LaunchScreen.storyboard */,
 				B8B2F4B5272018270095C023 /* Info.plist */,
@@ -130,6 +139,8 @@
 			files = (
 				B8B2F4B4272018270095C023 /* LaunchScreen.storyboard in Resources */,
 				B8B2F4B1272018270095C023 /* Assets.xcassets in Resources */,
+				B8B2F4BE27202F700095C023 /* SearchResultCell.xib in Resources */,
+				B893E06027205F7900750969 /* NothingFoundCell.xib in Resources */,
 				B8B2F4AF272018240095C023 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +156,7 @@
 				B8B2F4A8272018240095C023 /* AppDelegate.swift in Sources */,
 				B8B2F4BC272026690095C023 /* SearchResult.swift in Sources */,
 				B8B2F4AA272018240095C023 /* SceneDelegate.swift in Sources */,
+				B893E05E2720535A00750969 /* SearchResultCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
