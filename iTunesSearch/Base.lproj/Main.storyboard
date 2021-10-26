@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,19 +12,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SearchViewController" customModule="iTunesSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FrO-ZH-5rf">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="95" width="414" height="786"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="CWM-GY-6lO"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="TUw-N2-FC6"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" placeholder="App name, artist, song, album, e-book" translatesAutoresizingMaskIntoConstraints="NO" id="jfS-tG-agT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                            <searchBar contentMode="redraw" placeholder="App name, artist, song, album, e-book" id="jfS-tG-agT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="fTp-Ez-uHX"/>
@@ -33,16 +34,12 @@
                             </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="FrO-ZH-5rf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5JY-J2-HmP"/>
-                            <constraint firstItem="jfS-tG-agT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AuB-PW-TIH"/>
-                            <constraint firstItem="jfS-tG-agT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LeH-7E-k9O"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FrO-ZH-5rf" secondAttribute="bottom" id="M15-Fp-oVW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FrO-ZH-5rf" secondAttribute="trailing" id="VEe-io-Vfz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jfS-tG-agT" secondAttribute="bottom" constant="581" id="e4s-PZ-1AM"/>
-                            <constraint firstItem="jfS-tG-agT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="r7D-xQ-lHB"/>
-                            <constraint firstItem="FrO-ZH-5rf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="wgd-Pz-Ako"/>
+                            <constraint firstItem="FrO-ZH-5rf" firstAttribute="trailing" secondItem="jfS-tG-agT" secondAttribute="trailing" id="1YX-Yl-pSD"/>
+                            <constraint firstItem="FrO-ZH-5rf" firstAttribute="leading" secondItem="jfS-tG-agT" secondAttribute="leading" id="EO7-oS-MCB"/>
+                            <constraint firstItem="FrO-ZH-5rf" firstAttribute="top" secondItem="jfS-tG-agT" secondAttribute="bottom" id="lYH-Va-bR8"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="FrO-ZH-5rf" secondAttribute="bottom" constant="-19" id="txQ-Fd-xml"/>
                         </constraints>
                     </view>
                     <connections>
@@ -52,12 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="49.925037481259373"/>
+            <point key="canvasLocation" x="18.840579710144929" y="49.553571428571423"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

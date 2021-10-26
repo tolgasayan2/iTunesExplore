@@ -59,6 +59,7 @@
                     <constraint firstAttribute="bottom" secondItem="qoi-M2-B8D" secondAttribute="bottom" constant="19.5" id="ueK-Ju-6Qj"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="artistNameLabel" destination="DS4-1W-fiV" id="h00-bZ-jTs"/>
                 <outlet property="artworkImageView" destination="qoi-M2-B8D" id="IIA-uu-7CT"/>
