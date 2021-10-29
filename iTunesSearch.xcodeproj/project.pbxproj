@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B85291D1272AE2A700313FD8 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B85291D0272AE2A700313FD8 /* LoadingCell.xib */; };
+		B8858962272C5CA400CD496C /* DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8858961272C5CA400CD496C /* DownloadImage.swift */; };
 		B893E05E2720535A00750969 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B893E05D2720535A00750969 /* SearchResultCell.swift */; };
 		B893E06027205F7900750969 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B893E05F27205F7900750969 /* NothingFoundCell.xib */; };
 		B8B2F4A8272018240095C023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B2F4A7272018240095C023 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		B85291D0272AE2A700313FD8 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		B8858961272C5CA400CD496C /* DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImage.swift; sourceTree = "<group>"; };
 		B893E05D2720535A00750969 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		B893E05F27205F7900750969 /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		B8B2F4A4272018240095C023 /* iTunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 				B8B2F4A9272018240095C023 /* SceneDelegate.swift */,
 				B8B2F4AB272018240095C023 /* SearchViewController.swift */,
 				B893E05D2720535A00750969 /* SearchResultCell.swift */,
+				B8858961272C5CA400CD496C /* DownloadImage.swift */,
 				B8B2F4AD272018240095C023 /* Main.storyboard */,
 				B8B2F4BD27202F700095C023 /* SearchResultCell.xib */,
 				B893E05F27205F7900750969 /* NothingFoundCell.xib */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8B2F4AC272018240095C023 /* SearchViewController.swift in Sources */,
+				B8858962272C5CA400CD496C /* DownloadImage.swift in Sources */,
 				B8B2F4A8272018240095C023 /* AppDelegate.swift in Sources */,
 				B8B2F4BC272026690095C023 /* SearchResult.swift in Sources */,
 				B8B2F4AA272018240095C023 /* SceneDelegate.swift in Sources */,
