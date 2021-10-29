@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="dark"/>
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,21 +12,22 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SearchViewController" customModule="iTunesSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FrO-ZH-5rf">
-                                <rect key="frame" x="0.0" y="95" width="414" height="786"/>
-                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="95" width="375" height="586"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="CWM-GY-6lO"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="TUw-N2-FC6"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" placeholder="App name, artist, song, album, e-book" id="jfS-tG-agT">
-                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <searchBar contentMode="redraw" layoutMarginsFollowReadableWidth="YES" text="" placeholder="App name, artist, song, album, e-book" translatesAutoresizingMaskIntoConstraints="NO" id="jfS-tG-agT">
+                                <rect key="frame" x="0.0" y="44" width="378" height="51"/>
+                                <color key="barTintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <offsetWrapper key="searchTextPositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                                <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="fTp-Ez-uHX"/>
@@ -34,12 +35,15 @@
                             </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="FrO-ZH-5rf" firstAttribute="trailing" secondItem="jfS-tG-agT" secondAttribute="trailing" id="1YX-Yl-pSD"/>
-                            <constraint firstItem="FrO-ZH-5rf" firstAttribute="leading" secondItem="jfS-tG-agT" secondAttribute="leading" id="EO7-oS-MCB"/>
-                            <constraint firstItem="FrO-ZH-5rf" firstAttribute="top" secondItem="jfS-tG-agT" secondAttribute="bottom" id="lYH-Va-bR8"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="FrO-ZH-5rf" secondAttribute="bottom" constant="-19" id="txQ-Fd-xml"/>
+                            <constraint firstItem="FrO-ZH-5rf" firstAttribute="leading" secondItem="jfS-tG-agT" secondAttribute="leading" id="Mi1-mE-8wG"/>
+                            <constraint firstItem="jfS-tG-agT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NvC-rm-zt8"/>
+                            <constraint firstItem="FrO-ZH-5rf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ceA-w8-5CB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jfS-tG-agT" secondAttribute="trailing" constant="-19" id="fak-8n-DVY"/>
+                            <constraint firstItem="FrO-ZH-5rf" firstAttribute="top" secondItem="jfS-tG-agT" secondAttribute="bottom" id="fxF-05-J5t"/>
+                            <constraint firstItem="jfS-tG-agT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="mbm-2h-th6"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="FrO-ZH-5rf" secondAttribute="bottom" constant="-14" id="rrh-Ju-EXy"/>
                         </constraints>
                     </view>
                     <connections>
@@ -49,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="49.553571428571423"/>
+            <point key="canvasLocation" x="16.800000000000001" y="49.025487256371818"/>
         </scene>
     </scenes>
 </document>
