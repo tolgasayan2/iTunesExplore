@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FrO-ZH-5rf">
-                                <rect key="frame" x="0.0" y="95" width="375" height="586"/>
+                                <rect key="frame" x="0.0" y="131" width="375" height="550"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="CWM-GY-6lO"/>
@@ -24,7 +24,7 @@
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" layoutMarginsFollowReadableWidth="YES" text="" placeholder="App name, artist, song, album, e-book" translatesAutoresizingMaskIntoConstraints="NO" id="jfS-tG-agT">
-                                <rect key="frame" x="0.0" y="44" width="378" height="51"/>
+                                <rect key="frame" x="0.0" y="39" width="378" height="52.5"/>
                                 <color key="barTintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <offsetWrapper key="searchTextPositionAdjustment" horizontal="0.0" vertical="0.0"/>
                                 <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
@@ -33,21 +33,38 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="fTp-Ez-uHX"/>
                                 </connections>
                             </searchBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="b7X-Lo-QGY">
+                                <rect key="frame" x="16" y="96" width="343" height="32"/>
+                                <segments>
+                                    <segment title="All"/>
+                                    <segment title="Music"/>
+                                    <segment title="Software"/>
+                                    <segment title="E-books"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="qID-qr-ZsX"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="FrO-ZH-5rf" firstAttribute="leading" secondItem="jfS-tG-agT" secondAttribute="leading" id="Mi1-mE-8wG"/>
-                            <constraint firstItem="jfS-tG-agT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NvC-rm-zt8"/>
-                            <constraint firstItem="FrO-ZH-5rf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ceA-w8-5CB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jfS-tG-agT" secondAttribute="trailing" constant="-19" id="fak-8n-DVY"/>
-                            <constraint firstItem="FrO-ZH-5rf" firstAttribute="top" secondItem="jfS-tG-agT" secondAttribute="bottom" id="fxF-05-J5t"/>
-                            <constraint firstItem="jfS-tG-agT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="mbm-2h-th6"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="FrO-ZH-5rf" secondAttribute="bottom" constant="-14" id="rrh-Ju-EXy"/>
+                            <constraint firstItem="b7X-Lo-QGY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5JZ-zK-alc"/>
+                            <constraint firstItem="FrO-ZH-5rf" firstAttribute="top" secondItem="b7X-Lo-QGY" secondAttribute="bottom" constant="4" id="Q3o-XR-1aM"/>
+                            <constraint firstAttribute="trailing" secondItem="FrO-ZH-5rf" secondAttribute="trailing" id="Rtr-80-sv7"/>
+                            <constraint firstItem="FrO-ZH-5rf" firstAttribute="top" secondItem="jfS-tG-agT" secondAttribute="bottom" constant="39.5" id="ZHl-WY-Q12"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jfS-tG-agT" secondAttribute="trailing" constant="-19" id="gDx-ae-ZHd"/>
+                            <constraint firstItem="b7X-Lo-QGY" firstAttribute="centerX" secondItem="FrO-ZH-5rf" secondAttribute="centerX" id="iKH-gP-zhf"/>
+                            <constraint firstItem="jfS-tG-agT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kbN-8f-i8q"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="FrO-ZH-5rf" secondAttribute="bottom" constant="-14" id="t8M-iY-yfk"/>
+                            <constraint firstItem="b7X-Lo-QGY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="toX-qP-1ik"/>
+                            <constraint firstItem="jfS-tG-agT" firstAttribute="leading" secondItem="FrO-ZH-5rf" secondAttribute="leading" id="w18-Zy-wji"/>
+                            <constraint firstItem="jfS-tG-agT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="w65-Gy-WQv"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="searchBar" destination="jfS-tG-agT" id="Hfl-2j-NAs"/>
+                        <outlet property="segmentedControl" destination="b7X-Lo-QGY" id="JtQ-Fx-Tsn"/>
                         <outlet property="tableView" destination="FrO-ZH-5rf" id="wM3-wv-oib"/>
                     </connections>
                 </viewController>
