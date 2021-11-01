@@ -41,12 +41,11 @@ class SearchResult: Codable, CustomStringConvertible {
     return trackName ?? collectionName ?? ""
   }
   var genre: String {
+    let primaryGenreName = self.primaryGenreName ?? ""
     if let genre = itemGenre {
       return genre
-    } else if let genres = bookGenre {
-      return genres.joined(separator: ", ")
     }
-    return ""
+    return primaryGenreName
   }
   var type: String {
     let kind = self.kind ?? "audiobook"

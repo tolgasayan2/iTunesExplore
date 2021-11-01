@@ -28,12 +28,18 @@ class SearchViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    var celNib = UINib(nibName: TableView.CellIdentifiers.searchResultCell, bundle: nil)
-    tableView.register(celNib, forCellReuseIdentifier: TableView.CellIdentifiers.searchResultCell)
-    celNib = UINib(nibName: TableView.CellIdentifiers.nothingFoundCell, bundle: nil)
-    tableView.register(celNib, forCellReuseIdentifier: TableView.CellIdentifiers.nothingFoundCell)
-    celNib = UINib(nibName: TableView.CellIdentifiers.loadingCell, bundle: nil)
-    tableView.register(celNib, forCellReuseIdentifier: TableView.CellIdentifiers.loadingCell)
+    var celNib = UINib(
+      nibName: TableView.CellIdentifiers.searchResultCell, bundle: nil)
+    tableView.register(
+      celNib, forCellReuseIdentifier: TableView.CellIdentifiers.searchResultCell)
+    celNib = UINib(
+      nibName: TableView.CellIdentifiers.nothingFoundCell, bundle: nil)
+    tableView.register(
+      celNib, forCellReuseIdentifier: TableView.CellIdentifiers.nothingFoundCell)
+    celNib = UINib(
+      nibName: TableView.CellIdentifiers.loadingCell, bundle: nil)
+    tableView.register(
+      celNib, forCellReuseIdentifier: TableView.CellIdentifiers.loadingCell)
   }
   
   @IBAction func segmentChanged(_ sender: UISegmentedControl) {
@@ -59,7 +65,7 @@ class SearchViewController: UIViewController {
     switch category {
     case 1: kind = "musicTrack"
     case 2: kind = "software"
-    case 3: kind = "ebook"
+    case 3: kind = "movie"
     default: kind = ""
     }
     let encodedText = searchText.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
@@ -84,6 +90,7 @@ extension SearchViewController: UISearchBarDelegate {
   func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
     performSearch()
   }
+  //MARK: - URLSession
   
   func performSearch() {
     if !searchBar.text!.isEmpty {
@@ -167,6 +174,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     _ tableView: UITableView, didSelectRowAt indexPath: IndexPath
   ) {
     tableView.deselectRow(at: indexPath, animated: true)
+    performSegue(withIdentifier: "ShowDetail", sender: indexPath)
   }
   
   func tableView(
@@ -176,6 +184,14 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
       return nil
     } else {
       return indexPath
+    }
+  }
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "ShowDetail" {
+      let controller = segue.destination as! DetailViewController
+      let indexPath = sender as! IndexPath
+      let searchResult = searchResults[indexPath.row]
+      controller.searchResult = searchResult
     }
   }
 }
