@@ -26,6 +26,11 @@ class DetailViewController: UIViewController {
       if searchResult != nil {
         update()
       }
+      view.backgroundColor = UIColor.clear
+      let newView = GradientView(frame: CGRect.zero)
+      newView.frame = view.bounds
+      view.insertSubview(newView, at: 0
+      )
 
       popupView.layer.cornerRadius = 10
       
@@ -46,6 +51,10 @@ class DetailViewController: UIViewController {
   
   deinit {
     downloadedTask?.cancel()
+  }
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    transitioningDelegate = self
   }
    
   func update() {
@@ -84,5 +93,13 @@ class DetailViewController: UIViewController {
 extension DetailViewController: UIGestureRecognizerDelegate {
   func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
     return touch.view === self.view
+  }
+}
+extension DetailViewController: UIViewControllerTransitioningDelegate {
+  func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    return AnimationController()
+  }
+  func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    return SlideOutAnimationController()
   }
 }
