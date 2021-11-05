@@ -54,23 +54,26 @@ class DetailViewController: UIViewController {
    
   func update() {
     nameLabel.text = searchResult.name
+
     if searchResult.artist.isEmpty {
-      artistNameLabel.text = "Unknown"
+      artistNameLabel.text = NSLocalizedString("Unknown", comment: "Unknown artist")
     } else {
       artistNameLabel.text = searchResult.artist
     }
+
     kindLabel.text = searchResult.type
     genreLabel.text = searchResult.genre
-    //MARK: - Currency
-    
+
+    // Show price
     let formatter = NumberFormatter()
     formatter.numberStyle = .currency
     formatter.currencyCode = searchResult.currency
-    
+
     let priceText: String
     if searchResult.price == 0 {
-      priceText = "Free"
-    } else if let text = formatter.string(from: searchResult.price as NSNumber) {
+      priceText = NSLocalizedString("Free", comment: "Price - free")
+    } else if let text = formatter.string(
+      from: searchResult.price as NSNumber) {
       priceText = text
     } else {
       priceText = ""

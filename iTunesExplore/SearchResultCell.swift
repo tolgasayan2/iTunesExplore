@@ -22,9 +22,9 @@ class SearchResultCell: UITableViewCell {
   func configure(for result: SearchResult){
     nameLabel.text = result.name
     if result.artist.isEmpty {
-      artistNameLabel.text = "Unknown"
+      artistNameLabel.text = NSLocalizedString("Unknown", comment: "Unknown artist")
     } else {
-      artistNameLabel.text = String(format: "%@ (%@)", result.artist, result.type)
+      artistNameLabel.text = String(format: NSLocalizedString("Artist_Name_Format", comment: "Format for artist name"), result.artist, result.type)
     }
     artworkImageView.image = UIImage(systemName: "bookmark.circle")
     if let smallUrl = URL(string: result.artworkUrl60 ?? "") {

@@ -1,0 +1,45 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4T7-DM-x8a"; */
+"4T7-DM-x8a.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.subtitle = "GO"; ObjectID = "6dU-iV-KlJ"; */
+"6dU-iV-KlJ.configuration.subtitle" = "GO";
+
+/* Class = "UILabel"; text = "Artist Name"; ObjectID = "MhW-Oe-YiE"; */
+"MhW-Oe-YiE.text" = "Artist Name";
+
+/* Class = "UILabel"; text = "Genre:"; ObjectID = "NFe-rh-DNF"; */
+"NFe-rh-DNF.text" = "Genre:";
+
+/* Class = "UILabel"; text = "Type:"; ObjectID = "SNa-Qx-cXc"; */
+"SNa-Qx-cXc.text" = "Type:";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Xh8-Xg-zWI"; */
+"Xh8-Xg-zWI.text" = "Name";
+
+/* Class = "UISegmentedControl"; b7X-Lo-QGY.segmentTitles[0] = "All"; ObjectID = "b7X-Lo-QGY"; */
+"b7X-Lo-QGY.segmentTitles[0]" = "All";
+
+/* Class = "UISegmentedControl"; b7X-Lo-QGY.segmentTitles[1] = "Music"; ObjectID = "b7X-Lo-QGY"; */
+"b7X-Lo-QGY.segmentTitles[1]" = "Music";
+
+/* Class = "UISegmentedControl"; b7X-Lo-QGY.segmentTitles[2] = "Software"; ObjectID = "b7X-Lo-QGY"; */
+"b7X-Lo-QGY.segmentTitles[2]" = "Software";
+
+/* Class = "UISegmentedControl"; b7X-Lo-QGY.segmentTitles[3] = "Movie"; ObjectID = "b7X-Lo-QGY"; */
+"b7X-Lo-QGY.segmentTitles[3]" = "Movie";
+
+/* Class = "UIButton"; normalTitle = "$9.99"; ObjectID = "fww-C1-2eg"; */
+"fww-C1-2eg.normalTitle" = "$9.99";
+
+/* Class = "UILabel"; text = "Kind Value"; ObjectID = "fwy-l2-gYT"; */
+"fwy-l2-gYT.text" = "Kind Value";
+
+/* Class = "UITextView"; text = "Search and find all different iTunes contents"; ObjectID = "hQg-lf-rxa"; */
+"hQg-lf-rxa.text" = "Search and find all different iTunes contents";
+
+/* Class = "UISearchBar"; placeholder = "App name, artist, song, album, film"; ObjectID = "jfS-tG-agT"; */
+"jfS-tG-agT.placeholder" = "App name, artist, song, album, film";
+
+/* Class = "UILabel"; text = "Genre Value"; ObjectID = "w8Q-6q-7SK"; */
+"w8Q-6q-7SK.text" = "Genre Value";

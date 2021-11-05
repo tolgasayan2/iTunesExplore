@@ -10,7 +10,7 @@
 		B81F319527306E4500D4A0A7 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F319427306E4500D4A0A7 /* GradientView.swift */; };
 		B81F31972730724C00D4A0A7 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F31962730724C00D4A0A7 /* AnimationController.swift */; };
 		B82D10D5273151A5000F4553 /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82D10D4273151A5000F4553 /* SlideOutAnimationController.swift */; };
-		B853701C27357EF1009D68D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B853701E27357EF1009D68D0 /* InfoPlist.strings */; };
+		B853701C27357EF1009D68D0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B853701E27357EF1009D68D0 /* Localizable.strings */; };
 		B8537020273580A5009D68D0 /* OpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B853701F273580A5009D68D0 /* OpenViewController.swift */; };
 		B880AFC327356E8300B6461E /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = B880AFC227356E8300B6461E /* Search.swift */; };
 		B880AFCC273573B200B6461E /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B880AFCE273573B200B6461E /* NothingFoundCell.xib */; };
@@ -31,7 +31,9 @@
 		B81F319427306E4500D4A0A7 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B81F31962730724C00D4A0A7 /* AnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
 		B82D10D4273151A5000F4553 /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
-		B853701D27357EF1009D68D0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B8304F42273596CE00EB7FF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B8304F442735981200EB7FF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		B8304F4527359A1500EB7FF2 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B853701F273580A5009D68D0 /* OpenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenViewController.swift; sourceTree = "<group>"; };
 		B880AFC227356E8300B6461E /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		B880AFC42735733300B6461E /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
@@ -101,7 +103,7 @@
 				B880AFD3273573D800B6461E /* LoadingCell.xib */,
 				B8B2F4B0272018270095C023 /* Assets.xcassets */,
 				B8B2F4B5272018270095C023 /* Info.plist */,
-				B853701E27357EF1009D68D0 /* InfoPlist.strings */,
+				B853701E27357EF1009D68D0 /* Localizable.strings */,
 			);
 			path = iTunesExplore;
 			sourceTree = "<group>";
@@ -166,7 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8B2F4B1272018270095C023 /* Assets.xcassets in Resources */,
-				B853701C27357EF1009D68D0 /* InfoPlist.strings in Resources */,
+				B853701C27357EF1009D68D0 /* Localizable.strings in Resources */,
 				B880AFD1273573D800B6461E /* LoadingCell.xib in Resources */,
 				B8B2F4BE27202F700095C023 /* SearchResultCell.xib in Resources */,
 				B880AFCC273573B200B6461E /* NothingFoundCell.xib in Resources */,
@@ -199,12 +201,13 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B853701E27357EF1009D68D0 /* InfoPlist.strings */ = {
+		B853701E27357EF1009D68D0 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B853701D27357EF1009D68D0 /* tr */,
+				B8304F42273596CE00EB7FF2 /* en */,
+				B8304F4527359A1500EB7FF2 /* tr */,
 			);
-			name = InfoPlist.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		B880AFCE273573B200B6461E /* NothingFoundCell.xib */ = {
@@ -230,6 +233,7 @@
 			children = (
 				B8B2F4AE272018240095C023 /* Base */,
 				B880AFC42735733300B6461E /* tr */,
+				B8304F442735981200EB7FF2 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

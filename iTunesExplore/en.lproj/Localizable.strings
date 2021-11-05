@@ -1,54 +1,53 @@
-
 /* Format for artist name */
 "%@ (%@)" = "%@ (%@)";
 
 /* Localized kind: Album */
-"Album" = "Albüm";
+"Album" = "Album";
 
 /* Localized kind: Software */
 "App" = "App";
 
 /* Localized kind: Audio Book */
-"Audio Book" = "Sesli Kitap";
+"Audio Book" = "Audio Book";
 
 /* Localized kind: Book */
-"Book" = "Kitap";
+"Book" = "Book";
 
 /* Localized kind: E-Book */
-"E-Book" = "E-Kitap";
+"E-Book" = "E-Book";
 
 /* Price - free */
-"Free" = "Bedava";
+"Free" = "Free";
 
 /* Localized kind: Feature Movie */
-"Movie" = "Film";
+"Movie" = "Movie";
 
 /* Localized kind: Music Video */
-"Music Video" = "Müzik Video";
+"Music Video" = "Music Video";
 
 /* Nothing Found for search */
-"Nothing Found" = "Bulunamadı";
+"Nothing Found" = "Nothing Found";
 
 /* OK button title */
-"OK" = "Tamam";
+"OK" = "OK";
 
 /* Localized kind: Podcast */
 "Podcast" = "Podcast";
 
 /* Localized kind: Song */
-"Song" = "Şarkı";
+"Song" = "Song";
 
 /* Network error alert message */
-"There was an error accessing the iTunes Store. Please try again." = "iTunes Store'a bağlanmada sorun yaşandı. Lütfen tekrar deneyiniz.";
+"There was an error accessing the iTunes Store. Please try again." = "There was an error accessing the iTunes Store. Please try again.";
 
 /* Localized kind: TV Episode */
-"TV Episode" = "Dizi";
+"TV Episode" = "TV Episode";
 
 /* Unknown artist */
-"Unknown" = "Bilinmiyor";
+"Unknown" = "Unknown";
 
 /* Network error alert title */
-"Whoops..." = "Hoop";
+"Whoops..." = "Whoops...";
 
 /* Format for artist name label */
 "Artist_Name_Format" = "%@ (%@)";
