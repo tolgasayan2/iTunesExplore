@@ -1,0 +1,56 @@
+/* 
+  InfoPlist.strings
+  iTunesExplore
+
+  Created by Tolga Sayan on 5.11.2021.
+  
+*/
+
+
+/* Localized kind: Album */
+"Album" = "Albüm";
+
+/* Localized kind: Software */
+"App" = "App";
+
+/* Localized kind: Audio Book */
+"Audio Book" = "Sesli Kitap";
+
+/* Localized kind: Book */
+"Book" = "Kitap";
+
+/* Localized kind: E-Book */
+"E-Book" = "E-Kitap";
+
+/* Price - free */
+"Free" = "Bedava";
+
+/* Localized kind: Feature Movie */
+"Movie" = "Film";
+
+/* Localized kind: Music Video */
+"Music Video" = "Müzik Video";
+
+/* Nothing Found for search */
+"Nothing Found" = "Bulunamadı";
+
+/* OK button title */
+"OK" = "Tamam";
+
+/* Localized kind: Podcast */
+"Podcast" = "Podcast";
+
+/* Localized kind: Song */
+"Song" = "Şarkı";
+
+/* Network error alert message */
+"There was an error accessing the iTunes Store. Please try again." = "iTunes Store'a bağlanmada sorun yaşandı. Lütfen tekrar deneyiniz.";
+
+/* Localized kind: TV Episode */
+"TV Episode" = "Dizi";
+
+/* Unknown artist */
+"Unknown" = "Bilinmiyor";
+
+/* Network error alert title */
+"Whoops..." = "Hoop";

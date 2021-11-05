@@ -1,0 +1,39 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4T7-DM-x8a"; */
+"4T7-DM-x8a.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Artist Name"; ObjectID = "MhW-Oe-YiE"; */
+"MhW-Oe-YiE.text" = "Artist Name";
+
+/* Class = "UILabel"; text = "Genre:"; ObjectID = "NFe-rh-DNF"; */
+"NFe-rh-DNF.text" = "Genre:";
+
+/* Class = "UILabel"; text = "Type:"; ObjectID = "SNa-Qx-cXc"; */
+"SNa-Qx-cXc.text" = "Type:";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Xh8-Xg-zWI"; */
+"Xh8-Xg-zWI.text" = "Name";
+
+/* Class = "UISegmentedControl"; b7X-Lo-QGY.segmentTitles[0] = "All"; ObjectID = "b7X-Lo-QGY"; */
+"b7X-Lo-QGY.segmentTitles[0]" = "Hepsi";
+
+/* Class = "UISegmentedControl"; b7X-Lo-QGY.segmentTitles[1] = "Music"; ObjectID = "b7X-Lo-QGY"; */
+"b7X-Lo-QGY.segmentTitles[1]" = "Müzik";
+
+/* Class = "UISegmentedControl"; b7X-Lo-QGY.segmentTitles[2] = "Software"; ObjectID = "b7X-Lo-QGY"; */
+"b7X-Lo-QGY.segmentTitles[2]" = "Yazılım";
+
+/* Class = "UISegmentedControl"; b7X-Lo-QGY.segmentTitles[3] = "Movie"; ObjectID = "b7X-Lo-QGY"; */
+"b7X-Lo-QGY.segmentTitles[3]" = "Film";
+
+/* Class = "UIButton"; normalTitle = "$9.99"; ObjectID = "fww-C1-2eg"; */
+"fww-C1-2eg.normalTitle" = "$9.99";
+
+/* Class = "UILabel"; text = "Kind Value"; ObjectID = "fwy-l2-gYT"; */
+"fwy-l2-gYT.text" = "Kind Value";
+
+/* Class = "UISearchBar"; placeholder = "App name, artist, song, album, e-book"; ObjectID = "jfS-tG-agT"; */
+"jfS-tG-agT.placeholder" = "App name, sanatçı, şarkı, albüm, film";
+
+/* Class = "UILabel"; text = "Genre Value"; ObjectID = "w8Q-6q-7SK"; */
+"w8Q-6q-7SK.text" = "Genre Value";
